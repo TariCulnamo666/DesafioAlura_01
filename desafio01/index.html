@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="desafio.css" />
+    <link rel="stylesheet" href="index.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href="media_tablets.css">
+    <link rel="stylesheet" media="only screen and (max-width: 375px)" href="media_celulares.css">
+    <!--Se deben relacionar las hojas de stilo para cada pantalla-->
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="/img/Logo.png" alt="logo" class="logo" />
+    </header>
+    <main>
+      <section>
+        <textarea
+          class="text-area"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+        <div>
+          <img src="/img/Frame 1.png" class="informacion" />
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section>
+        <textarea class="mensaje" cols="20" rows="10"></textarea>
+        <div>
+          <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+        </div>
+      </section>
+    </main>
+    <script src="/desafio01/index.js"></script>
+  </body>
+</html>
